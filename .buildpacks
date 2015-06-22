@@ -1,2 +1,2 @@
-https://github.com/heroku/heroku-buildpack-nodejs
+https://github.com/heroku/heroku-buildpack-nodejs#fix-prebuild-should-skip-prune
 https://github.com/hunterloftis/buildpack-node-env
