@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "bin/www",
+    "start": "echo WEB_CONCURRENCY=$WEB_CONCURRENCY && bin/www",
     "postinstall": "echo NODE_ENV=$NODE_ENV"
   },
   "dependencies": {
