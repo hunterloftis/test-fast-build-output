@@ -5,7 +5,7 @@
   "scripts": {
     "prestart": "echo WEB_CONCURRENCY=$WEB_CONCURRENCY",
     "start": "bin/www",
-    "postinstall": "for i in $(seq 1 2000); do echo \"The quick brown fox jumps over the lazy dog$i\"; done"
+    "postinstall": "for i in $(seq 1 9999); do echo \"The quick brown fox jumps over the lazy dog$i\"; done"
   },
   "engines": {
     "node": "4.1.1",
