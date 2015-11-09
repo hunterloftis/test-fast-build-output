@@ -24,7 +24,6 @@ app.use(logger('dev'));
 // app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', function(req, res, next) { res.send({ status: 'ok' }); });
 app.use('/', routes);
 app.use('/users', users);
 app.post('/bigpost', function(req, res, next) {
