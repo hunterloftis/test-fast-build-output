@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.post('/bigpost', function(req, res, next) {
-  res.status(404).send('not here');
+  res.status(413).send('too big');
 });
 
 // catch 404 and forward to error handler
