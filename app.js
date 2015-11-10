@@ -29,10 +29,11 @@ app.use('/users', users);
 app.post('/bigpost', function(req, res, next) {
   res.status(413).send('too big');
 });
-app.post('/slowpost', function(req, res, next) {
-  setTimeout(function() {
-    res.status(500).send('blah blah');
-  }, 10000);
+app.all('/slowpost', function(req, res, next) {
+  // setTimeout(function() {
+  //   res.status(500).send('blah blah');
+  // }, 10000);
+  res.socket.destroy();
 });
 
 // catch 404 and forward to error handler
