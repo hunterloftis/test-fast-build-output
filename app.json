@@ -1,0 +1,8 @@
+{
+  "name":"test-fast-build-output",
+  "scripts":{},
+  "env":{},
+  "addons":[
+    "heroku-postgresql"
+  ]
+}
